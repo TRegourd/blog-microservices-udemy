@@ -8,10 +8,10 @@ const CommentList = ({ comments }) => {
 			content = comment.content;
 		}
 		if (comment.status === 'rejected') {
-			content = 'Rejected';
+			content = 'This comment have been rejected';
 		}
 		if (comment.status === 'pending') {
-			content = 'Pending';
+			content = 'Your comment is pending for moderation';
 		}
 		return <li key={comment.id}>{content}</li>;
 	});
